@@ -94,16 +94,15 @@ body {
     width: 100%;
     color: white;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-    width: 100%;
 }
 
 /* Geral */
 
-.aboutMe-container, .aboutMe-buttons, .qualifications-container, .pages-container {
+.qualifications-container, .pages-container {
     display: flex;
 }
 
-.aboutMe-child, .qualifications-child {
+.qualifications-child {
     flex: 1;
 }
 
@@ -122,11 +121,42 @@ a:link {
     text-decoration: none;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'details form1 form1'
+        'button1 button2 button3';
+}
+.grid-item {
+    padding: 20px;
+}
+.grid-item-details {
+    grid-area: details;
+}
+.grid-item-form {
+    grid-area: form1;
+}
+.grid-item-button1 {
+    grid-area: button1;
+}
+.grid-item-button2 {
+    grid-area: button2;
+}
+.grid-item-button3 {
+    grid-area: button3;
+}
+
 .borderline {
     border-top: solid 2px #edf0f2;
+    margin-top: 0;
 }
 
 /* HomePage - About me */
+
+.aboutMe-details{
+    margin: 0px 20px;
+    width: 40vw;
+}
 
 .aboutMe-presentation-image {
     display: block;
@@ -144,13 +174,17 @@ a:link {
 }
 
 .aboutMe-text-title {
-    margin: 150px auto 90px;
+    margin: 100px auto 60px;
 }
 
 .aboutMe-text-information {
     text-align: center;
     margin: 0 10%;
     font-size: 1.3vw;
+}
+
+.aboutMe-container-buttons {
+    display: contents;
 }
 
 .aboutMe-btn {
@@ -179,17 +213,6 @@ a:link {
     width: 70px;
     text-align: center;
     text-decoration: none;
-}
-
-.aboutMe-text-btn {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 3%;
-}
-
-.text-btn {
-    padding: 10px 8vw;
 }
 
 /* HomePage - My SKILLS */
@@ -346,7 +369,7 @@ a:link {
 .pageMyQualifications-table-title {
     font-family: 'Space Mono', monospace;
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 2rem;
     padding: 10px 0;
     align-items: center;
 
@@ -362,9 +385,10 @@ a:link {
 
 @media only screen and (max-width: 1000px) {
     .pageMyQualifications-table-date {
-        min-width: 300px;
+        min-width: 150px;
     }
-  }
+}
+
 .pageMyQualifications-table-text {
     font-size: 20px;
     padding-bottom: 25px;
@@ -380,31 +404,6 @@ a:link {
 
 /* Contact Me Page */
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'details form1 form1'
-        'button1 button2 button3';
-    padding: 10px;
-}
-.grid-item {
-    padding: 20px;
-}
-.grid-item-details {
-    grid-area: details;
-}
-.grid-item-form {
-    grid-area: form1;
-}
-.grid-item-button1 {
-    grid-area: button1;
-}
-.grid-item-button2 {
-    grid-area: button2;
-}
-.grid-item-button3 {
-    grid-area: button3;
-}
 
 .pageContact-text {
     width: 100%;
@@ -437,7 +436,7 @@ input[type=checkbox], input[type=radio] {
     accent-color: black;
   }
 
-input:focus, textarea:focus { 
+input[type=text]:focus, input[type=email]:focus, textarea:focus { 
     outline: 1px solid black;
     box-shadow: 0 0 10px black;
     border-color: black;
@@ -492,5 +491,213 @@ input[type=date] {
     justify-content: left;
 }
 
+/****************************** Mobile ********************************/
 
-  
+@media only screen and (max-width: 895px) {
+    .navbar-custom {
+        background: rgb(112,112,112);
+        background: linear-gradient(125deg, rgba(209,209,209,1) 8%, rgba(41,41,41,0.6) 29%, rgba(22,22,22,0.5) 41%, rgba(19, 18, 18, 0.217) 100%);
+    }
+
+    .navbar-brand {
+        height: 70px;
+    }
+
+    .nav-link-custom {
+        text-align: center;
+    }
+
+    .titles {
+        margin: 20px auto;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+    .header-image {
+        height: 100vh;
+    }
+
+    .container-presentation {
+        bottom: 25%;
+    }
+
+    .title-presentation {
+        font-size: 35px;
+    }
+
+    .subtitle-presentation, .btn-presentation {
+        font-size: 15px;
+    }
+
+    .btn-presentation {
+        padding: 10px 40px;
+        margin-top: 5px;
+    }
+
+    .aboutMe-container, .grid-container, .qualifications-container {
+        display: block;
+    }
+
+    .aboutMe-details {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .aboutMe-presentation-image {
+        width: 60%;
+    }
+
+    .aboutMe-presentation-title, .pageAboutMe-title {
+        font-size: 30px;
+    }
+
+    .aboutMe-presentation-text, .pageAboutMe-subtitle {
+        font-size: 20px;
+    }
+
+
+    .aboutMe-btn {
+        padding: 10px 50px;
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .aboutMe-text-information, .pageaboutMe-text-information {
+        font-size: 18px;
+    }
+
+    .skills {
+        font-size: 20px;
+    }
+
+    .qualifications-child {
+        margin: 0 auto;
+    }
+
+    .qualifications-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .qualifications-btn {
+        margin: 15px auto;
+    }
+
+    .qualifications-p {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .qualifications-text {
+        font-size: 20px;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .pageAboutMe-image {
+        height: 400px;
+    }
+
+    .pages-container {
+        display: block;
+    }
+
+    .pages-details {
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    .pageAboutMe-icons  {
+        justify-content: unset;
+    }
+
+    .pageAboutMe-btn-container {
+        display: block;
+    }
+
+    .pageAboutMe-btn {
+        width: 250px;
+        padding: 10px 50px;
+    }
+
+    .pageMyQualifications-container {
+        margin: 10px auto;
+        padding: 5px 30px;
+    }
+
+    .pageMyQualifications-table-title {
+        display: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+
+      table td {
+        display: block;
+        font-size: .8em;
+        text-align: left;
+      }
+      
+      table td::before {
+        content: attr(data-label);
+        margin: 10px auto;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .pageMyQualifications-table-date {
+        font-size: 15px;
+      }
+      
+      .pageMyQualifications-table-text {
+        font-size: 15px;
+      }
+      
+}
+
+@media only screen and (min-width: 600px) and (max-width:895px){
+    .aboutMe-container-buttons {
+        background-color: #edf0f2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-container-buttons {
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    
+    .footer-costum {
+        display: block !important;
+    }
+
+    .footer-copyright {
+        justify-content: center !important;
+    }
+
+    .footer-brand {
+        margin: 20px auto !important;
+    }
+
+    .icons-footer-block {
+        justify-content: center !important;
+    }
+
+    .icons-footer {
+        margin: 0 auto !important;
+    }
+
+}
+
+
+
+
+    
+
