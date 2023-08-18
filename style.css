@@ -9,6 +9,11 @@ body {
     color: black;
 }
 
+.body-section {
+    margin: 0 auto;
+    width: 90%;
+}
+
 /* HomePage - Header */
 
 .header-homepage {
@@ -24,7 +29,6 @@ body {
     padding-left: 10px;
     position: absolute;
     width: 100%;
-
 }
 
 .nav-link-custom {
@@ -90,6 +94,7 @@ body {
     width: 100%;
     color: white;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    width: 100%;
 }
 
 /* Geral */
@@ -118,9 +123,7 @@ a:link {
 }
 
 .borderline {
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-bottom-color: #edf0f2;
+    border-top: solid 2px #edf0f2;
 }
 
 /* HomePage - About me */
@@ -274,25 +277,19 @@ a:link {
     margin: 50px 0;
 }
 
-.pages-container { 
-    padding-bottom: 60px;
-}
-
 /* About me Page */
 
 .pageAboutMe-image {
-    width: 90%;
+    width: 100%;
     height: 75vh;
     object-fit: cover;
     display: block;
-    margin: 20px 80px;
+    margin: 20px auto;
 }
-
-
 
 .pages-details {
     background-color: #edf0f2;
-    margin: 10px 40px 10px 80px;
+    margin: 0px 40px 0px 0px;
     padding: 20px 5vw 0px 30px;
 }
 
@@ -303,10 +300,6 @@ a:link {
 
 .pageAboutMe-icons {
     margin: -10px -20px;
-}
-
-.pageAboutMe-text {
-    margin-right: 80px;
 }
 
 .pageAboutMe-title {
@@ -342,7 +335,7 @@ a:link {
 
 .pageMyQualifications-container {
     background-color: #edf0f2;
-    margin: 30px 80px;
+    margin: 30px auto;
     padding: 50px;
 }
 
@@ -380,3 +373,124 @@ a:link {
 .line {
     border-top: solid 4px black;
 }
+
+.pageQualifications-btn {
+    font-size: 1.4vw;
+}
+
+/* Contact Me Page */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'details form1 form1'
+        'button1 button2 button3';
+    padding: 10px;
+}
+.grid-item {
+    padding: 20px;
+}
+.grid-item-details {
+    grid-area: details;
+}
+.grid-item-form {
+    grid-area: form1;
+}
+.grid-item-button1 {
+    grid-area: button1;
+}
+.grid-item-button2 {
+    grid-area: button2;
+}
+.grid-item-button3 {
+    grid-area: button3;
+}
+
+.pageContact-text {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 12px;
+}
+
+#legend-form {
+    text-align: center;
+    margin: 5px auto 20px;
+    font-weight: bolder;
+}
+
+.contact-input, .pageContact-text-btn {
+    display: flex;
+    gap: 3%;
+}
+
+input[type=text], select, textarea, input[type=email] {
+    font-family: 'Space Mono', monospace;
+    color: black;
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+    border: none;
+    border-bottom: 3px solid black;
+  }
+
+input[type=checkbox], input[type=radio] {
+    accent-color: black;
+  }
+
+input:focus, textarea:focus { 
+    outline: 1px solid black;
+    box-shadow: 0 0 10px black;
+    border-color: black;
+}
+
+.contact-border {
+    border-bottom: 3px solid black;
+}
+
+.contact-label {
+    padding: 12px 12px 0 0;
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    color: black;
+}
+
+.contact-input-radio {
+    padding: 12px;
+    text-align: left;
+    width: 100%;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin-right: 10px;
+}
+
+input[type=date] {
+    border: none;
+}
+
+.page-contact {
+    padding-bottom: 0;
+}
+
+.pageContact-details-btn {
+    margin: 0 auto 10px auto;
+    font-size: 1vw;
+    padding: 10px 5vw;
+}
+
+.pageContact-text-btn {
+    margin: 0 auto 10px auto;
+    padding: 10px 5vw;
+}
+
+.pageContact-btn {
+    font-size: 1vw;
+    margin: 0 auto;
+}
+
+.contactMe-icons {
+    justify-content: left;
+}
+
+
+  

@@ -56,84 +56,85 @@
     </nav>
   </header>
 
-  <!-- Section Contact me -->
+  <section class="body-section">
+    <!-- Section Contact me -->
+  
+    <section>
+      <h2 class="titles pages-pagetitle">&#60;Say hello&#62;</h2>
+    </section>
 
-  <section>
-    <h2 class="titles pages-pagetitle">&#60;Say hello&#62;</h2>
-  </section>
-
-  <section class="pages-container">
-    <div class="pages-child pages-details">
-      <h6 class="pages-details-title">EMAIL</h6>
-      <p>dianarsrodrigues@gmail.com</p>
-      <h6 class="pages-details-title">PHONE NUMBER</h6>
-      <p>+351 918079591</p>
-      <div class="aboutMe-child">
-        <h6 class="pages-details-title">SOCIAL</h6>
-        <div class="aboutMe-presentation-icons pageAboutMe-icons">
-          <a href="https://www.instagram.com/dianarsrodrigues/" target="_blank"><img class="aboutMe-icons" src="/Icons/instagram.png" alt="Icon Instagram"></a>
-          <a href="https://www.youtube.com/channel/UCs3moWmX3NmEb6FojqLgqcg" target="_blank"><img class="aboutMe-icons" src="/Icons/youtube.png" alt="Icon Youtube"></a>
-          <a href="https://www.linkedin.com/in/dianarsrodrigues/" target="_blank"><img class="aboutMe-icons" src="/Icons/linkedin.png" alt="Icon Linkedin"></a>
-          <a href="https://github.com/dianarsrodrigues" target="_blank"><img class="aboutMe-icons" src="/Icons/github-logo.png" alt="Icon Github"></a>
+    <div class="grid-container">
+      <div class="grid-item grid-item-details pages-details">
+        <h6 class="pages-details-title">EMAIL</h6>
+        <p>dianarsrodrigues@gmail.com</p>
+        <h6 class="pages-details-title">PHONE NUMBER</h6>
+        <p>+351 918079591</p>
+        <div class="aboutMe-child">
+          <h6 class="pages-details-title">SOCIAL</h6>
+          <div class="aboutMe-presentation-icons pageAboutMe-icons contactMe-icons">
+            <a href="https://www.instagram.com/dianarsrodrigues/" target="_blank"><img class="aboutMe-icons" src="/Icons/instagram.png" alt="Icon Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCs3moWmX3NmEb6FojqLgqcg" target="_blank"><img class="aboutMe-icons" src="/Icons/youtube.png" alt="Icon Youtube"></a>
+            <a href="https://www.linkedin.com/in/dianarsrodrigues/" target="_blank"><img class="aboutMe-icons" src="/Icons/linkedin.png" alt="Icon Linkedin"></a>
+            <a href="https://github.com/dianarsrodrigues" target="_blank"><img class="aboutMe-icons" src="/Icons/github-logo.png" alt="Icon Github"></a>
+          </div>
         </div>
       </div>
-    </div>
-      <div class="pages-child pageContact-text">
-        <form action="">
+      <div class="grid-item grid-item-form">
+        <form action="" id="contact-form">
           <fieldset>
-            <legend> If you'd like to contact me for a project</legend>
-            <div>
+            <legend id="legend-form"> If you'd like to contact me for a project</legend>
+            <div class="contact-input">
               <input type="text" name="nome" id="nome" required placeholder="NAME">
               <br><br>
-              <input type="tel" id="telefone" name="telefone" placeholder="YOUR PHONE NUMBER">
-              <br><br>
               <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
-              <br>
             </div>
-            <br>
+            <div class="contact-border">
+              <label class="contact-label" for="">DO YOU LIKE TO SCHEDULE A MEETING?</label>
+              <div class="contact-input">
+                <div class="contact-input-radio">
+                  <input type="radio" name="form" id="sim-form">
+                  <label for="sim">Yes</label>
+                  <br>
+                  <input type="radio" name="form" id="nao-form">
+                  <label for="nao">No</label>
+                </div>
+                <div class="contact-input-radio">
+                  <input type="date" id="date">
+                </div>
+              </div>
+            </div>
+            <div class="contact-border">
+              <label class="contact-label" for="">HOW DID YOU FIND ME?</label>
+              <div class="contact-input-radio">
+                <input type="checkbox" name="form" id="redes-form">
+                <label for="redes">Social Media</label>
+                <br>
+                <input type="checkbox" name="form" id="linkedin-form">
+                <label for="linkedin">Linkedin</label>
+                <br>
+                <input type="checkbox" name="form" id="other-form">
+                <label for="other">Other</label>
+              </div>
+            </div>
             <div>
-              <label for="">DO YOU LIKE TO SCHEDULE A MEETING?</label>
-              <br>
-              <input type="radio" name="form" id="sim-form">
-              <label for="sim">Yes</label>
-              <br>
-              <input type="radio" name="form" id="nao-form">
-              <label for="nao">No</label>
-              <br><br>
-              <input type="date" id="date">
-            </div>
-            <br>
-            <div class="">
-              <label for="">How did you find me?</label>
-              <br>
-              <input type="checkbox" name="form" id="redes-form">
-              <label for="redes">Social Media</label>
-              <br>
-              <input type="checkbox" name="form" id="linkedin-form">
-              <label for="linkedin">Linkedin</label>
-              <br>
-              <input type="checkbox" name="form" id="other-form">
-              <label for="other">Other</label>
-            </div>
-            <br>
-            <div>
-              <textarea name="message" id="" cols="30" rows="10">Message</textarea>
+              <textarea name="message" id="" cols="30" rows="5" placeholder="MESSAGE"></textarea>
             </div>
           </fieldset>
         </form>
       </div>
-
-    </section>
-    <section class="aboutMe-buttons borderline">
-      <div class="aboutMe-child">
-        <a href="mailto:dianarsrodrigues@gmail.com"><button class="aboutMe-btn pageContact-btn">Email me</button></a>
-      </div>
-      <div class="aboutMe-child aboutMe-text-btn">
-        <input  class="aboutMe-btn pageContact-btn" type="submit" value="Send Message">
-        <input  class="aboutMe-btn pageContact-btn" type="reset" value="Reset">
-      </div>
-    
+      <div class="grid-item grid-item-button1 pages-details">
+        <a href="mailto:dianarsrodrigues@gmail.com"><button class="aboutMe-btn pageContact-details-btn">Email me</button></a>
+      </div> 
+      <div class="grid-item grid-item-button2">
+          <input  class="aboutMe-btn pageContact-btn" form="contact-form" type="submit" value="Send Message">
+      </div>  
+      <div class="grid-item grid-item-button3">
+          <input  class="aboutMe-btn pageContact-btn" form="contact-form" type="reset" value="Reset">
+      </div> 
+    </div>
   </section>
+
+  <hr class="borderline">
 
    <!-- Footer -->
 
