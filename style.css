@@ -1,25 +1,30 @@
+/* Icon importado do bootstrap - seta do botão "Learn More! - Home Page  */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-/* font-family: 'Open Sans', sans-serif;
+/* Fontes usadas
+font-family: 'Open Sans', sans-serif;
 font-family: 'Space Mono', monospace;
- */
+*/
  
 body {
     font-family: 'Open Sans', sans-serif;
     color: black;
 }
 
+/* Pages - body */
 .body-section {
     margin: 0 auto;
     width: 90%;
 }
 
-/* HomePage - Header */
+/* HomePage ------------------------------------------------------------------------------------------------------------------------------- */
 
+/* HomePage - Header */
 .header-homepage {
     position: relative;
 }
 
+/* HomePage - Navbar */
 .navbar-custom {
     background: rgb(112,112,112);
     background: linear-gradient(125deg, rgba(209,209,209,1) 8%, rgba(41,41,41,0.32679009103641454) 29%, rgba(22,22,22,0.5508797268907564) 41%, rgba(0,0,0,0.5508797268907564) 100%);
@@ -35,13 +40,14 @@ body {
     margin-right: 50px;
 }
 
+/* Navbar - collapse  */
 @media only screen and (max-width: 991px) {
     .nav-link-custom {
         margin-right: 5px;
         text-align: right;
         text-decoration: solid;
     }
-  }
+}
 
 .header-image {
     width: 100%;
@@ -59,6 +65,34 @@ body {
     font-size: 5vw;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap; 
+    animation: 
+        typing 1.5s steps(25, end) forwards;
+    animation-delay: 0.5s;
+}
+
+.title-presentation2 {
+    font-size: 5vw;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap; 
+    animation: 
+      typing2 1.5s steps(25, end) forwards;
+    animation-delay: 2s;
+}
+
+@keyframes typing {
+    from {width: 0%; border-right: .05em solid white;}
+    to {width: 100%; border-right: 0em solid white; }
+}
+
+@keyframes typing2 {
+    from {width: 0%; border-right: .05em solid white;}
+    to {width: 75%; border-right: 0em solid white; }
 }
 
 .subtitle-presentation {
@@ -82,21 +116,7 @@ body {
     color: black;
 }
 
-/* Header - Pages */
-
-.navbar-custom-pages {
-    background: rgb(112,112,112);
-    background: linear-gradient(125deg, rgba(209,209,209,1) 8%, rgba(41,41,41,1) 29%, rgba(22,22,22,1) 41%, rgba(0,0,0,1) 100%);
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 100%;
-    color: white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-/* Geral */
+/* Common to all pages  *********************************************************************************************************************/
 
 .qualifications-container, .pages-container {
     display: flex;
@@ -151,8 +171,10 @@ a:link {
     margin-top: 0;
 }
 
-/* HomePage - About me */
 
+/* HomePage - Body section ----------------------------------------------------------------------------------------- */
+
+/* About me */
 .aboutMe-details{
     margin: 0px 20px;
     width: 40vw;
@@ -180,7 +202,7 @@ a:link {
 .aboutMe-text-information {
     text-align: center;
     margin: 0 10%;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 .aboutMe-container-buttons {
@@ -215,17 +237,15 @@ a:link {
     text-decoration: none;
 }
 
-/* HomePage - My SKILLS */
-
-
+/* My Skills*/
 .skills-title {
     margin: 20px;
 }
 
 .container-skills {
-    gap: 2em;
-    margin: 6% auto;
+    margin: 4% auto;
     justify-content: center;
+    max-width: 93%;
 }
 
 .skills {
@@ -234,13 +254,43 @@ a:link {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 85px 0;
     font-size: 1.7vw;
     font-family: 'Space Mono', monospace;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 100px 0;
 }
 
-/* HomePage - My qualifications */
+.slide-arrow{
+    position: absolute;
+    top: 52%;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
 
+.prev-arrow{
+    left: -60px;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 25px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    background-color: white;
+}
+
+.next-arrow{
+    right: -60px;
+    width: 0;
+    height: 0;
+    border-right: 0 solid transparent;
+    border-left: 25px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    background-color: white;
+}
+
+/* My qualifications */
 .qualifications-child {
     margin: 80px;
 }
@@ -262,7 +312,7 @@ a:link {
 }
 
 .qualifications-p {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
 }
 
 .qualifications-btn {
@@ -292,8 +342,23 @@ a:link {
     border-top: 4px solid black;
     opacity: 1;
 }
-/* PAGES */
 
+/* PAGES  ***************************************************************************************************/
+
+/* Navbar - Pages  */
+.navbar-custom-pages {
+    background: rgb(112,112,112);
+    background: linear-gradient(125deg, rgba(209,209,209,1) 8%, rgba(41,41,41,1) 29%, rgba(22,22,22,1) 41%, rgba(0,0,0,1) 100%);
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+/* Page titles */
 .pages-pagetitle {
     font-weight: 400;
     font-size: 60px;
@@ -301,7 +366,6 @@ a:link {
 }
 
 /* About me Page */
-
 .pageAboutMe-image {
     width: 100%;
     height: 75vh;
@@ -350,12 +414,11 @@ a:link {
 }
 
 .pageAboutMe-btn {
-    font-size: 1vw;
+    font-size: 18px;
     padding: 10px 7vw;
 }
 
-/* My Qualifications Page */
-
+/* My Qualifications Page  */
 .pageMyQualifications-container {
     background-color: #edf0f2;
     margin: 30px auto;
@@ -372,7 +435,6 @@ a:link {
     font-size: 2rem;
     padding: 10px 0;
     align-items: center;
-
 }
 
 .pageMyQualifications-table-date {
@@ -403,8 +465,6 @@ a:link {
 }
 
 /* Contact Me Page */
-
-
 .pageContact-text {
     width: 100%;
     box-sizing: border-box;
@@ -491,9 +551,10 @@ input[type=date] {
     justify-content: left;
 }
 
-/****************************** Mobile ********************************/
+/********************************************************** Mobile e Tablet ************************************************************/
 
 @media only screen and (max-width: 895px) {
+    /* Navbar */
     .navbar-custom {
         background: rgb(112,112,112);
         background: linear-gradient(125deg, rgba(209,209,209,1) 8%, rgba(41,41,41,0.6) 29%, rgba(22,22,22,0.5) 41%, rgba(19, 18, 18, 0.217) 100%);
@@ -507,12 +568,14 @@ input[type=date] {
         text-align: center;
     }
 
+    /* Titles Pages */
     .titles {
         margin: 20px auto;
         font-size: 40px;
         padding-top: 30px;
     }
 
+    /* Home Page */
     .header-image {
         height: 100vh;
     }
@@ -521,7 +584,7 @@ input[type=date] {
         bottom: 25%;
     }
 
-    .title-presentation {
+    .title-presentation, .title-presentation2 {
         font-size: 35px;
     }
 
@@ -534,6 +597,7 @@ input[type=date] {
         margin-top: 5px;
     }
 
+    /* Homepage e Pages */
     .aboutMe-container, .grid-container, .qualifications-container {
         display: block;
     }
@@ -555,7 +619,6 @@ input[type=date] {
         font-size: 20px;
     }
 
-
     .aboutMe-btn {
         padding: 10px 50px;
         font-size: 20px;
@@ -566,10 +629,21 @@ input[type=date] {
         font-size: 18px;
     }
 
+    /* Homepage - skills */
+
     .skills {
         font-size: 20px;
+        width: 165px;
+        height: 165px;
+        padding: 70px 0;
     }
 
+    .container-skills {
+        gap: 1em;
+        margin: 6% auto;
+    }
+
+    /* Homepage - qualifications */
     .qualifications-child {
         margin: 0 auto;
     }
@@ -594,6 +668,7 @@ input[type=date] {
         margin: 0 20px;
     }
 
+    /* Page About me */
     .pageAboutMe-image {
         height: 400px;
     }
@@ -620,6 +695,7 @@ input[type=date] {
         padding: 10px 50px;
     }
 
+    /* Page qualifications */
     .pageMyQualifications-container {
         margin: 10px auto;
         padding: 5px 30px;
@@ -635,30 +711,31 @@ input[type=date] {
         padding: 0;
         width: 100%;
         table-layout: fixed;
-      }
+    }
 
-      table td {
+    table td {
         display: block;
         font-size: .8em;
         text-align: left;
-      }
+    }
       
-      table td::before {
+    table td::before {
         content: attr(data-label);
         margin: 10px auto;
         font-weight: 700;
         font-size: 20px;
-      }
+    }
 
-      .pageMyQualifications-table-date {
+    .pageMyQualifications-table-date {
         font-size: 15px;
-      }
+    }
       
-      .pageMyQualifications-table-text {
+    .pageMyQualifications-table-text {
         font-size: 15px;
-      }
-      
+    }
 }
+
+/*************************************************** Tablet ********************************************************  */
 
 @media only screen and (min-width: 600px) and (max-width:895px){
     .aboutMe-container-buttons {
@@ -670,10 +747,24 @@ input[type=date] {
     .contact-container-buttons {
         background-color: white;
     }
+
+    .container-presentation {
+        bottom: 35%;
+    }
+
+    .title-presentation, .title-presentation2 {
+        font-size: 55px;
+    }
+
+    .subtitle-presentation, .btn-presentation {
+        font-size: 25px;
+    }
 }
 
+/************************************ Mobile ***********************************************/
+
 @media only screen and (max-width: 400px){
-    
+    /* footer */
     .footer-costum {
         display: block !important;
     }
@@ -693,11 +784,4 @@ input[type=date] {
     .icons-footer {
         margin: 0 auto !important;
     }
-
 }
-
-
-
-
-    
-
