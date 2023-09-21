@@ -533,7 +533,7 @@ input[type=date] {
 
 .pageContact-details-btn {
     margin: 0 auto 10px auto;
-    font-size: 1vw;
+    font-size: 1.3vw;
     padding: 10px 5vw;
 }
 
@@ -543,7 +543,7 @@ input[type=date] {
 }
 
 .pageContact-btn {
-    font-size: 1vw;
+    font-size: 1.3vw;
     margin: 0 auto;
 }
 
@@ -571,8 +571,7 @@ input[type=date] {
     /* Titles Pages */
     .titles {
         margin: 20px auto;
-        font-size: 40px;
-        padding-top: 30px;
+        font-size: 35px;
     }
 
     /* Home Page */
@@ -619,6 +618,10 @@ input[type=date] {
         font-size: 20px;
     }
 
+    .aboutMe-text-title {
+        padding-top: 30px;
+    }
+
     .aboutMe-btn {
         padding: 10px 50px;
         font-size: 20px;
@@ -633,24 +636,26 @@ input[type=date] {
 
     .skills {
         font-size: 20px;
-        width: 165px;
-        height: 165px;
-        padding: 70px 0;
+        padding: 50px 0;
     }
 
     .container-skills {
         gap: 1em;
         margin: 6% auto;
+        width: 300px;
     }
 
     /* Homepage - qualifications */
+    .qualifications-container {
+        margin: 0 20px;
+    }
+
     .qualifications-child {
         margin: 0 auto;
     }
 
     .qualifications-title {
         text-align: center;
-        font-size: 30px;
     }
 
     .qualifications-btn {
@@ -723,7 +728,7 @@ input[type=date] {
         content: attr(data-label);
         margin: 10px auto;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .pageMyQualifications-table-date {
@@ -731,7 +736,7 @@ input[type=date] {
     }
       
     .pageMyQualifications-table-text {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
@@ -763,7 +768,7 @@ input[type=date] {
 
 /************************************ Mobile ***********************************************/
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 767px){
     /* footer */
     .footer-costum {
         display: block !important;
