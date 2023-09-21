@@ -772,6 +772,9 @@ input[type=date] {
     .footer-copyright {
         justify-content: center !important;
     }
+    .container {
+        padding: 0;
+    }
 
     .footer-brand {
         margin: 20px auto !important;
